@@ -36,7 +36,7 @@ options = {
   pose_publish_period_sec = 5e-3,
   trajectory_publish_period_sec = 30e-3,
   rangefinder_sampling_ratio = 1.,
-  odometry_sampling_ratio = 1.,
+  odometry_sampling_ratio = 1.0,
   fixed_frame_pose_sampling_ratio = 1.,
   imu_sampling_ratio = 1.,
   landmarks_sampling_ratio = 1.,
@@ -54,7 +54,7 @@ TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(3.)
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.translation_weight = 70
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 300
 
-TRAJECTORY_BUILDER_2D.submaps.resolution = 0.035
+-TRAJECTORY_BUILDER_2D.submaps.resolution = 0.035
 TRAJECTORY_BUILDER_2D.submaps.num_range_data = 120
 POSE_GRAPH.optimize_every_n_nodes = 120
 POSE_GRAPH.constraint_builder.min_score = 0.82
